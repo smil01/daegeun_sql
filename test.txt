@@ -1,2 +1,3 @@
-git repository test
-git repository push test
+git remote add : git repository test
+push : git repository push test
+他の場所から連動(Home)
