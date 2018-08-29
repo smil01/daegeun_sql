@@ -1,0 +1,20 @@
+CREATE TABLE Test_1 ( oh INT PRIMARY KEY, dae INT, geun VARCHAR(20) );
+
+INSERT INTO Test_1 (oh,dae,geun) VALUES (1,11,"오대근1");
+INSERT INTO Test_1 (oh,dae,geun) VALUES (2,22,"오대근2");
+INSERT INTO Test_1 (oh,dae,geun) VALUES (3,33,"오대근3");
+INSERT INTO Test_1 (oh,dae,geun) VALUES (4,44,"오대근4");
+/*select * from T_1;*/
+
+
+CREATE TABLE Test_2 ( oh INT PRIMARY KEY, dae INT, god VARCHAR(20) );
+
+INSERT INTO Test_2 (oh,dae,god) VALUES (2,22,"BMW");
+INSERT INTO Test_2 (oh,dae,god) VALUES (3,33,"SM7");
+/*select * from T_2;*/
+
+
+/* ====================================== Left Outer join(Commit_user:daegeun_sql_testOffice) ↓====================================== */
+SELECT Test_1.oh,Test_1.dae, Test_1.geun, Test_2.god
+FROM Test_1 LEFT  OUTER JOIN Test_2 ON Test_1.oh=Test_2.oh
+/* ====================================== Left Outer join(Commit_user:daegeun_sql_testOffice) ↑====================================== */
