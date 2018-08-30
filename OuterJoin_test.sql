@@ -30,3 +30,8 @@ FROM Test_1 RIGHT OUTER JOIN Test_2 ON Test_1.oh=Test_2.oh;
 SELECT Test_1.oh,Test_1.dae, Test_1.geun, Test_2.god
 FROM Test_1 FULL OUTER JOIN Test_2 ON Test_1.oh=Test_2.oh;
 /* ====================================== FULL Outer join(Commit_user:daegeun_sql_testHome / branch:testHome_user) ↑====================================== */
+
+
+/* ====================================== (Commit_user:daegeun_sql_testHome / branch:testOffice_user) ↓====================================== */
+          /* ====================================== テストは終わりました　====================================== */
+/* ====================================== (Commit_user:daegeun_sql_testHome / branch:testOffice_user) ↑====================================== */
