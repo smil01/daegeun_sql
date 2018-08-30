@@ -10,7 +10,6 @@ from classicmodels.offices inner join classicmodels.employees
 where classicmodels.employees.reportsTo = 1002 or classicmodels.employees.reportsTo = 1143
 order by classicmodels.offices.officeCode desc;
 
-
 /*officeCode、reportsTo=1002, 1143　　のoお客様*/
 select classicmodels.customers.salesRepEmployeeNumber
 from classicmodels.offices inner join classicmodels.employees
@@ -22,3 +21,15 @@ order by classicmodels.customers.salesRepEmployeeNumber desc;
 /* ====================================== INNER join(Commit_user:daegeun_sql / branch:main_user) ↑====================================== */
 
 
+select * from classicmodels.products;
+select * from classicmodels.productlines;
+select * from classicmodels.orders;
+
+
+/* ====================================== Left&RiGHT Outer join(Commit_user:daegeun_sql_testOffice) -> (Commit_user:daegeun_sql_testHome) ↓====================================== */
+/*products, productlines Join line*/
+
+
+/*products, productlines Join line, orders Join num*/
+
+/* ====================================== Left&RiGHT Outer join(Commit_user:daegeun_sql_testOffice) -> (Commit_user:daegeun_sql_testHome) ↑====================================== */
