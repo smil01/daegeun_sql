@@ -28,8 +28,13 @@ select * from classicmodels.orders;
 
 /* ====================================== Left&RiGHT Outer join(Commit_user:daegeun_sql_testOffice) -> (Commit_user:daegeun_sql_testHome) ↓====================================== */
 /*products, productlines Join line*/
+select classicmodels.products.productLine
+from classicmodels.products left outer join classicmodels.productlines
+	on classicmodels.products.productLine = classicmodels.productlines.productLine
+order by classicmodels.products.productLine desc;
 
-
-/*products, productlines Join line, orders Join num*/
-
+select classicmodels.products.productLine
+from classicmodels.products right outer join classicmodels.productlines
+	on classicmodels.products.productLine = classicmodels.productlines.productLine
+order by classicmodels.products.productLine desc;
 /* ====================================== Left&RiGHT Outer join(Commit_user:daegeun_sql_testOffice) -> (Commit_user:daegeun_sql_testHome) ↑====================================== */
