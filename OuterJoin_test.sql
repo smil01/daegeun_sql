@@ -16,5 +16,11 @@ INSERT INTO Test_2 (oh,dae,god) VALUES (3,33,"SM7");
 
 /* ====================================== Left Outer join(Commit_user:daegeun_sql_testOffice) -> (Commit_user:daegeun_sql_testHome) ↓====================================== */
 SELECT Test_1.oh,Test_1.dae, Test_1.geun, Test_2.god
-FROM Test_1 LEFT  OUTER JOIN Test_2 ON Test_1.oh=Test_2.oh
+FROM Test_1 LEFT  OUTER JOIN Test_2 ON Test_1.oh=Test_2.oh;
 /* ====================================== Left Outer join(Commit_user:daegeun_sql_testOffice) -> (Commit_user:daegeun_sql_testHome) ↑====================================== */
+
+
+/* ====================================== RIGHT Outer join(Commit_user:daegeun_sql / branch:main_user) ↓====================================== */
+SELECT Test_1.oh,Test_1.dae, Test_1.geun, Test_2.god
+FROM Test_1 RIGHT OUTER JOIN Test_2 ON Test_1.oh=Test_2.oh
+/* ====================================== RIGHT Outer join(Commit_user:daegeun_sql / branch:main_user) ↑====================================== */
